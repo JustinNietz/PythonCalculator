@@ -1,12 +1,19 @@
 import unittest
-from Calculator import  Calculator
+from Calculator import Calculator
+
 
 class MyTestCase(unittest.TestCase):
 
+    def test_instantiate_calculator(self):
+        calculator = Calculator()
+        self.assertIsInstance(calculator, Calculator)
 
- def test_instantiate_calculator(self):
-     calculator = Calculator()
-     self.assertIsInstance(calculator, Calculator)
+    def test_results_property_calculator(self):
+        calculator = Calculator()
+        self.assertEqual(calculator.result, 4)
+
+if __name__ == '__main__':
+    unittest.main()
 
     # def setUp(self) -> None:
     #     self.calculator = Calculator()
@@ -59,6 +66,3 @@ class MyTestCase(unittest.TestCase):
     #         self.assertEqual(self.calculator.sqrt(row['Value 1']),round(float(row['Result']),7))
     #         self.assertEqual(self.calculator.result,round(float(row['Result']),7))
     #     test_data.clear()
-
-if __name__ == '__main__':
-    unittest.main()
