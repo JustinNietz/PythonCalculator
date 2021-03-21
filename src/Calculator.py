@@ -1,3 +1,6 @@
+def addition(a, b):
+    return a + b
+
 class Calculator:
     result = 0
 
@@ -6,10 +9,10 @@ class Calculator:
         self.result = x;
         pass
 
+    def add(self, a, b):
+        self.result = a + b
+        return addition(a, b)
 
-# def addition(a,b):
-#     return int(a) + int(b)
-#
 # def subtraction(a,b):
 #     return int(b) - int(a)
 
