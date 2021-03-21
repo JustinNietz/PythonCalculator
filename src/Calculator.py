@@ -25,7 +25,6 @@ def division(a, b):
 def square(a):
    return int(a)**2
 
-
 class Calculator:
     result = 0
 
