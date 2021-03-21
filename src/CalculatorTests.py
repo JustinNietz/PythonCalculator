@@ -35,22 +35,7 @@ if __name__ == '__main__':
     unittest.main()
 
 
-    # def test_addition_method_calculator(self):
-    #    test_data = CsvReader('/src/Unit Test Addition.csv').data
-    #    #pprint(test_data)
-    #    for row in test_data:
-    #        self.assertEqual(self.calculator.add(row['Value 1'],row['Value 2']),int(row['Result']))
-    #        self.assertEqual(self.calculator.result,int(row['Result']))
-    #    test_data.clear()
-    #
-    # def test_subtraction_method_calculator(self):
-    #     test_data = CsvReader('/src/Unit Test Subtraction.csv').data
-    #     #pprint(test_data)
-    #     for row in test_data:
-    #         self.assertEqual(self.calculator.subtract(row['Value 1'],row['Value 2']),int(row['Result']))
-    #         self.assertEqual(self.calculator.result,int(row['Result']))
-    #     test_data.clear()
-    #
+
     # def test_multiplication_method_calculator(self):
     #     test_data = CsvReader('/src/Unit Test Multiplication.csv').data
     #     #pprint(test_data)
