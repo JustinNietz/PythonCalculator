@@ -31,19 +31,17 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result,int(row['Result']))
         test_data.clear()
 
+    def test_multiply_method_calculator(self):
+        test_data = CsvReader('/src/Unit Test Multiplication.csv').data
+        # pprint(test_data)
+        for row in test_data:
+            self.assertEqual(self.calculator.multiply(row['Value 1'],row['Value 2']),int(row['Result']))
+            self.assertEqual(self.calculator.result,int(row['Result']))
+        test_data.clear()
+
 if __name__ == '__main__':
     unittest.main()
 
-
-
-    # def test_multiplication_method_calculator(self):
-    #     test_data = CsvReader('/src/Unit Test Multiplication.csv').data
-    #     #pprint(test_data)
-    #     for row in test_data:
-    #         self.assertEqual(self.calculator.multiply(row['Value 1'],row['Value 2']),float(row['Result']))
-    #         self.assertEqual(self.calculator.result,float(row['Result']))
-    #     test_data.clear()
-    #
     # def test_division_method_calculator(self):
     #     test_data = CsvReader('/src/Unit Test Division.csv').data
     #     #pprint(test_data)
