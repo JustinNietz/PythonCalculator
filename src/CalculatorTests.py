@@ -47,19 +47,20 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(self.calculator.result,float(row['Result']))
         test_data.clear()
 
+    def test_square_method_calculator(self):
+        test_data = CsvReader('/src/Unit Test Square.csv').data
+        #pprint(test_data)
+        for row in test_data:
+            self.assertEqual(self.calculator.sq(row['Value 1']), int(row['Result']))
+            self.assertEqual(self.calculator.result,int(row['Result']))
+        test_data.clear()
+
 
 if __name__ == '__main__':
     unittest.main()
 
 
-    # def test_square_method_calculator(self):
-    #     test_data = CsvReader('/src/Unit Test Square.csv').data
-    #     #pprint(test_data)
-    #     for row in test_data:
-    #         self.assertEqual(self.calculator.sqr(row['Value 1']),float(row['Result']))
-    #         self.assertEqual(self.calculator.result,float(row['Result']))
-    #     test_data.clear()
-    #
+
     # def test_square_root_method_calculator(self):
     #     test_data = CsvReader('/src/Unit Test Square Root.csv').data
     #     #pprint(test_data)
