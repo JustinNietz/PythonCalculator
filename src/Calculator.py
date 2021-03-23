@@ -1,20 +1,11 @@
 def addition(a, b):
-    a = int(a)
-    b = int(b)
-    c = a + b
-    return c
+    return int(a) + int(b)
 
 def subtraction(a, b):
-   a = int(a)
-   b = int(b)
-   c = b - a
-   return c
+   return int(b) - int(a)
 
 def multiplication(a, b):
-    a = int(a)
-    b = int(b)
-    c = a * b
-    return c
+    return int(a) * int(b)
 
 def division(a, b):
     a = float(a)
